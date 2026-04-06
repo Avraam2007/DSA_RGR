@@ -20,7 +20,7 @@ namespace Hanoi {
                 throw new ArgumentOutOfRangeException($"This task has only 3 poles! Problem with the position of \"{nameof(buffer)}\".");
             }
 
-            if (disksAmount < 0) {
+            if (disksAmount > 0) {
                 if (disksAmount == 1) {
                     Console.WriteLine($"Moving disk number {disksAmount} from {from} to {to}");
                     return;
